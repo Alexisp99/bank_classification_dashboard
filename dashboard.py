@@ -25,7 +25,7 @@ with all_for_country:
         st.subheader("Open account per gender")
         st.write(px.histogram(df,x = "bank_account",color = "gender_of_respondent",barmode = "group",histnorm='percent'))
         st.subheader("Open account per country")
-        px.histogram(df,x = "country",color = "bank_account",barmode = "group",histnorm='percent')
+        st.write(px.histogram(df,x = "country",color = "bank_account",barmode = "group",histnorm='percent'))
         
     
 with Kenya :
